@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Design Inspector",
+  "version": "0.1.0",
+  "description": "Inspect any website's design visually: size, spacing, colors and typography, without DevTools.",
+  "action": {
+    "default_title": "Design Inspector (Alt+Shift+I)"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+I" }
+    }
+  }
+}
